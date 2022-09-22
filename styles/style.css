@@ -1,0 +1,152 @@
+:root {
+    /* COLORES */
+
+    --blue: #062d75;
+    --yellow: #e9e938;
+    --white: #eaeaea;
+    --black: #252a34;
+    --blueCard: #182e57;
+    --blueTwo: #034574;
+    --red:#e91000;
+    --bgc:#040911;
+
+    /* TEXTO*/
+    --title: 5rem;
+    --text: 1.4rem;
+    --title_2: 3rem;
+    --textSocialMedias: 1.9rem;
+    --textForm:1.1rem
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--blueCard);
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header img {
+    position: relative;
+    margin: 2rem;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+header img:hover{
+    background-color: var(--black);
+    transition: calc(.3s);
+    transform:scale(1.2);
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;    
+}
+
+.tarjeta{
+    width: 30rem;
+    height: 20rem;
+    margin: 30px;
+    background-color: var(--white);
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    transition: all 300ms;
+}
+
+.error {
+    color: var(--red);
+    display: inline-block;
+    font-size: 0.7rem;
+    margin: 0 0.3rem;
+}
+
+button {
+    all: initial;
+    font: inherit;
+    cursor: pointer;
+    user-select: none;
+
+    color: var(--white);
+    background: var(--blueCard);
+    text-align: center;
+    margin: 10px 5px;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button:hover{
+    background-color: var(--blueTwo);
+    transition: calc(.5s);
+    transform: scale(1.02);
+
+}
+
+.contenedor-botones{
+    display: flex;
+}
+
+.mensaje-contenedor {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    all: initial;
+    font: inherit;
+    background: transparent;
+    color: var(--bgc);
+    padding: 1em 0.5em;
+}
+
+.footer{
+    background-color: var(--blueTwo);
+    height: 6rem;
+}
+
+.footer h2{
+    padding-top: 10px;
+    text-align: center;
+    font-size: var(--textForm);
+    color: var(--white);
+}
+
+.footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: var(--black);
+    transition: calc(.5s);
+    transform: scale(1.02);
+}
+
+.socialMediasEnd {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: var(--textSocialMedias);
+    padding-top:10px ;
+}
+
+@media (max-width:768px ) {
+    .footer{
+        height: 10rem;
+    }
+}
